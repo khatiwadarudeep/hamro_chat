@@ -18,19 +18,25 @@ const Login: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        <div className="flex items-center justify-center">
-          <MessageSquare className="h-10 w-10 text-primary-600" />
-          <h1 className="ml-2 text-3xl font-extrabold text-gray-900">HamroChat</h1>
-        </div>
-        <h2 className="mt-6 text-center text-3xl font-bold text-gray-900">
-          Sign in to your account
-        </h2>
-        <p className="mt-2 text-center text-sm text-gray-600">
-          Or{' '}
-          <Link to="/register" className="font-medium text-primary-600 hover:text-primary-500">
-            create a new account
-          </Link>
-        </p>
+       <div className="flex items-center justify-center">
+  <MessageSquare className="h-10 w-10 text-primary-600" />
+  <h1 className="ml-2 text-3xl font-bold text-primary-700 tracking-tight">
+    Hamro<span className="text-primary-500">Chat</span>
+  </h1>
+</div>
+<h2 className="mt-6 text-center text-xl font-semibold text-gray-700">
+  Welcome back! Sign in to continue
+</h2>
+<p className="mt-2 text-center text-sm text-gray-600">
+  Don’t have an account?{' '}
+  <Link
+    to="/register"
+    className="font-semibold text-primary-600 hover:underline"
+  >
+    Register here
+  </Link>
+</p>
+
       </div>
 
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
